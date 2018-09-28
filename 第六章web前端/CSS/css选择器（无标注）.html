@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css选择器</title>
+    <style type="text/css">
+        /* css注释表示方式为斜杠、星，pycharm注释快捷键注释与body内注释方式相同，打开文件会有样式错误*/
+        div,p{
+            font-size:30px;
+            color:blue;
+        }
+        p:hover{
+            color:red;
+        }
+        #box{
+            color:pink;
+        }
+        .yahei{
+        font-family:"Microsoft Yahei"
+        }
+        .indent{
+            text-indent:40px;
+        }
+        .list li{
+            height:30px;
+        }
+        .list a{
+            text-decoration:none;
+            color:red;
+        }
+        .box1,.box2,.box3{
+            font-size:14px;
+            text-indent:28px;
+        }
+        .box1{
+            color:red;
+        }
+        .box2{
+            color:gold;
+        }
+        .box3{
+            color:pink;
+        }
+        .box1:before{
+            content:"在前面的文字";
+            color:blue;
+        }
+        .box2:after{
+            content:"在后面的文字";
+            color:red;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="yahei indent">这是第1个div元素</div>
+    <div id="box" class="yahei">这是第2个div元素</div>
+    <div class="yahei">这是第3个div元素</div>
+    <br>
+    <p>这是一段测试文字，用来检测标签选择器作用</p>
+    <ul class="list">
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+    </ul>
+    <br>
+    <div class="box1">文字001</div>
+    <div class="box2">文字002</div>
+    <div class="box3">文字003</div>
+</body>
+</html>

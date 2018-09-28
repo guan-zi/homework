@@ -1,0 +1,51 @@
+body, ul, p, h1, h2, h3, h4, h5, h6, dl, dd, input, select, form{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*让h标签继承body内设置的字体大小*/
+h1, h2, h3, h4, h5, h6{
+    font-size: 100%;
+}
+
+/*去掉默认的项目图标*/
+
+ul{
+    list-style: none;
+}
+
+em{
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*去掉IE下，图片做连接时产生的边框*/
+img{
+    border: none;
+}
+
+/* 清除margin-top塌陷和清除浮动*/
+.clearfix:before, .clearfix:after{
+    content: "";
+    display: table;
+}
+
+.clearfix:after{
+    clear:both;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}

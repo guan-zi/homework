@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>static position</title>
+	<style type="text/css">
+		.con{
+			width: 400px;
+			height: 400px;
+			border: 1px solid #000;
+			margin: 100px auto 0;
+			position: relative;
+		}
+
+		.con div{
+			width: 200px;
+			height: 100px;
+			margin: 20px;
+			background-color: gold;
+			text-align: center;
+			line-height: 100px;
+			font-size: 40px;
+		}
+
+		body .box01{
+			position: fixed;
+			right: 0;
+			bottom: 0;
+
+		}
+
+		.box04{
+			background-color: pink;
+			position: absolute;
+			left: 100px;
+			top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="con">
+		<div class="box01">1</div>
+		<div class="box02">2</div>
+		<div class="box03">3</div>
+	</div>
+
+	<div class="box04">第四个盒子</div>
+</body>
+</html>

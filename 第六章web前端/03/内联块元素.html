@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内联块元素</title>
+    <style type="text/css">
+        .con{
+            width:500px;
+            height:300px;
+            border:1px solid #333;
+            margin:50px auto 0;
+            font-size:0px;
+
+        }
+
+        .con a{
+            background-color:blue;
+            width:150px;
+            height:50px;
+            /*将内联元素转化为内联块元素，支持所有样式*/
+            display:inline-block;
+            margin:10px 0;
+            padding:5px;
+            font-size:20px;
+            line-height:50px;
+            text-decoration:none;
+        }
+
+        .con span{
+            display:inline-block;
+            background-color:gold;
+            font-size:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <a href="#">这1a标签</a>
+        <a href="#">这2a标签</a>
+        <a href="#">这3a标签</a>
+        <a href="#">这4a标签</a>
+        <a href="#">这5a标签</a>
+        <a href="#">这6a标签</a>
+        <a href="#">这7a标签</a>
+        <a href="#">这8a标签</a>
+        <span>这是一个span标签</span>
+    </div>
+</body>
+</html>

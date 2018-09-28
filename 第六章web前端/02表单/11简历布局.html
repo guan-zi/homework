@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简历</title>
+</head>
+<body>
+    <h3>用户注册</h3>
+    <!--form 标签定义表单整体 action属性定义表单信息发送地址,method属性取定发送请求类型-->
+    <form action="http://www.itcast.cn" method="get">
+        <!--请求方式为get时的请求：?username=三毛&password=123&gender=on&hobby=on&hobby=on&info=描述个人信息&site=0-->
+        <!--post请求时只显示表单提交的网址，隐藏提交的个人信息-->
+        <div>
+            <!--增加id属性和label标签for属性，提升用户体验，单击文字也能够选中-->
+            <label for="username">用户名：</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <br />
+        <div>
+            <label for="password">密码：</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <br />
+        <div>
+            <label>性别：</label>
+            <!--value属性，为提交时约定的内容-->
+            <!--username=&password=&gender=0&hobby=0&hobby=on&hobby=on&info=描述个人信息&site=0&hid=10000-->
+            <input type="radio" name="gender" id="male" value="0"> <label for="male">男</label>
+            <input type="radio" name="gender" id="female" value="1"> <label for="female">女</label>
+        </div>
+        <br />
+        <div>
+            <label for="">爱好：</label>
+            <input type="checkbox" name="hobby" id="games" value="0"> <label for="games">游戏</label>
+            <input type="checkbox" name="hobby" id="shopping">  <label for="shopping">逛街</label>
+            <input type="checkbox" name="hobby" id="zhai">  <label for="zhai">睡觉</label>
+
+        </div>
+        <br>
+        <div>
+            <label>
+                个人描述：
+            </label>
+            <br>
+            <textarea name="info" cols="30" rows="10">描述个人信息</textarea>
+        </div>
+        <div>
+            <label for="">籍贯：</label>
+            <!--name属性为发送籍贯信息的名称-->
+            <select name="site" id="">
+                <option value="0">北京</option>
+                <option value="1">上海</option>
+                <option value="2">广州</option>
+                <option value="3">深圳</option>
+            </select>
+        </div>
+        <!--隐藏发送请求信息：填写、选择所有内容-->
+        <input type="hidden" name="hid" value="10000">
+        <!--type属性设置功能,value属性显示按钮名称-->
+        <input type="submit" name="" value="提交">
+        <!--图片方式提交-->
+        <!--<input type='image' name="" src="../images/new.png">-->
+
+        <input type="reset" name="" value="重置">
+        <input type="button" name="" value="按钮">
+    </form>
+
+
+
+</body>
+</html>

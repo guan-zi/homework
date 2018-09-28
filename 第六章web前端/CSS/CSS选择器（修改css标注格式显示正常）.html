@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*<!--标签选择器-->*/
+        div,p{
+            color:blue;
+            font-size:30px;
+        }
+        /*伪类及伪元素选择器*/
+        p:hover{
+            color:red;
+        }
+        /*<!--id选择器-->*/
+        #box{
+            color:pink;
+        }
+        /*<!--类选择器-->*/
+        .yahei{
+            font-family:'Microsoft Yahei';
+        }
+        .indent{
+            text-indent:40px;
+        }
+        /*<!--层级选择器-->*/
+        .list li{
+            height:30px;
+
+        }
+        .list a{
+            text-decoration:none;
+            color:red;
+
+        }
+        .list a:hover{
+            color:gold;
+            text-decoration:underline;
+        }
+        /*<!--组选择器定义多个类样式具有相同的属性-->*/
+        .box1,.box2,.box3{
+            font-size:14px;
+            text-indent:28px;
+        }
+        .box1{
+            color:red;
+        }
+        .box2{
+            color:gold;
+        }
+        .box3{
+            color:pink;
+        }
+        /*<!--伪类及伪元素选择器-->*/
+
+        .box1:before{
+            content:"在前面的文字 ";
+            color:blue;
+        }
+        .box1:before{
+            content:"在前面的文字 ";
+            color:pink;
+        }
+        .box2:after{
+            content:"在后面的文字";
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <!--添加多个类样式使用空格隔开-->
+    <div class="yahei indent">这是第一个div元素</div>
+    <!--id选择器样式与类样式共同作用-->
+    <div id='box' lass="yahei">这是第2个div元素</div>
+    <div class="">这是第3个div元素</div>
+    <!--标签选择器-->
+    
+    <p>这是一段文字，这是一段文字，这是一段文字</p>
+    
+    <!--层级选择器样式自动作用-->
+    <ul class="list">
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+        <li><a href="">新闻标题</a></li>
+    </ul>
+    <div class="box1">文字001</div>
+    <div class="box2">文字002</div>
+    <div class="box3">文字003</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+    <style type="text/css">
+        .menu{
+            width:694px;
+            height:50px;
+            margin:50px auto 0;
+            /*用于取消列表项前的圆点*/
+            list-style:none;
+            padding:0;
+            /*解决内联元素之间的间隙：
+            1、去掉内联元素之间的换行
+            2、将内联元素的父级设置font-size为0，
+            内联元素自身再设置font-size*/
+            font-size:0;
+        }
+
+        .menu li{
+            /*display属性
+            display属性是用来设置元素的类型及隐藏的，常用的属性有：
+            1、none 元素隐藏且不占位置
+            2、block 元素以块元素显示
+            3、inline 元素以内联元素显示
+            4、inline-block 元素以内联块元素显示
+            */
+            display:inline-block;
+            width:98px;
+            height:48px;
+            border:1px solid gold;
+            font-size:16px;
+            margin-right:-1px;
+            text-align:center;
+            line-height:48px;
+        }
+
+        /*伪类，设置光标悬浮变色*/
+        .menu li:hover{
+            background-color:blue;
+        }
+
+        .menu a{
+            font-family:"Microsoft Yahei";
+            color:pink;
+            /*消除类表文字内容的下划线*/
+            text-decoration:none;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="">首页</a></li>
+        <li><a href="">公司简介</a></li>
+        <li><a href="">公司简介</a></li>
+        <li><a href="">公司简介</a></li>
+        <li><a href="">公司简介</a></li>
+        <li><a href="">公司简介</a></li>
+    </ul>
+</body>
+</html>
